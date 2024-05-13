@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "train mae",
+            "type": "python",
+            "request": "launch",
+            "program": "mae_pretrain.py",
+            "args": [
+                "--batch_size",
+                "1",
+                "--exp_name",
+                "test",
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "4"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
